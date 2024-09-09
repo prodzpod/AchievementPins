@@ -74,7 +74,7 @@ namespace AchievementPins
             IL.RoR2.UI.LogBook.LogBookController.BuildEntriesPage += (il) =>
             {
                 ILCursor c = new(il);
-                c.GotoNext(x => x.MatchLdloc(10), x => x.MatchLdcI4(4));
+                c.GotoNext(x => x.MatchLdloc(13), x => x.MatchLdcI4(4));
                 c.Index++;
                 c.Remove();
                 c.Emit(OpCodes.Ldc_I4_3);
